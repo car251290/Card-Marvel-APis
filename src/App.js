@@ -7,12 +7,15 @@ import SeriesList from "./component/Series/SeriesList";
 import SearchResultsPage from "./component/NavBar/SearchResultsPage";
 import EventList from "./component/Events/EventList";
 import Comics from "./component/comics/Comics";
+
 import "./App.css";
 
 
 const App = () => {
+
   const [searchQuery, setSearchQuery] = useState('');
   const [activeTab, setActiveTab] = useState('characters');
+
 
 const handleSearch = (query) => {
   setSearchQuery(query);
