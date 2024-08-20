@@ -2,11 +2,13 @@ import React, { useContext } from 'react';
 import { MarvelContext } from '../../context/CharacterProvider';
 import { Grid, Typography, CircularProgress } from '@mui/material';
 import MarvelSeries from './series';
+import { red } from '@mui/material/colors';
 
 
 const SerieList= () => {
     const {series,loading} = useContext(MarvelContext);
-    if(!series || series.length ===0){
+
+    if(!series.length){
         return <Typography variant="h4" gutterBottom> No series found</Typography>;
     }
     if(loading){
@@ -14,7 +16,7 @@ const SerieList= () => {
     }
     return(
         <div>
-            <Typography variant="h4" gutterBottom>
+            <Typography variant="h4" gutterBottom sx={{color:'red'}}>
                 Marvel Series
             </Typography>
             <Grid container spacing={3}>

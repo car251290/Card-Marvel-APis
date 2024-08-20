@@ -38,15 +38,12 @@ import marvelLogo from './../img/marvelLogo.png';
             <Button color="inherit" onClick={()=> setActiveTab('Home')}>
                 Home
             </Button>
-            <Button color="inherit" onClick={()=> setActiveTab('comics')}>
-                Comics
-            </Button>
             <Button color="inherit" onClick={()=> setActiveTab('characters')}>
                 Characters
             </Button>
            
             <Button color="inherit" onClick={() => setActiveTab('stories')}>
-                        Stories
+                        Comics
             </Button>
             <Button color="inherit" onClick={() => setActiveTab('events')}>
                         Events

@@ -15,7 +15,7 @@ const EventList = () => {
     }
 return (
     <div>
-    <Typography variant="h4" gutterBottom>
+    <Typography variant="h4" gutterBottom sx={{color:'red'}}>
         Marvel Events
     </Typography>
     <Grid container spacing={3}>

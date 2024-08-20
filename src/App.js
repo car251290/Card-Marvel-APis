@@ -27,7 +27,6 @@ console.log('setActionTab', setActiveTab);
          <NavBar onSearch={handleSearch} setActiveTab={setActiveTab}></NavBar>
         <div className="content">
           {activeTab ==="characters" && <CharactersList searchQuery={searchQuery} />}
-          {activeTab ==="comics" && <Comics/>}
           {activeTab ==="stories" && <SeriesDescription/>}
           {activeTab ==="events" && < EventList/>}
           {activeTab ==="Series" && <SeriesList/>}
@@ -35,11 +34,11 @@ console.log('setActionTab', setActiveTab);
         </div>
       </div>
   <SeriesDescription/>
-    {/* Display Series */}
-    <SeriesList/>
    {/* Display Events */}
   <EventList/>
- 
+   {/* Display Series */}
+   <SeriesList/>
+
   </CharacterProvider>
   );
 };

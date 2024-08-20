@@ -13,7 +13,7 @@ const SeriesDescription = () => {
 
   return (
     <div>
-      <Typography variant="h4" gutterBottom>
+      <Typography variant="h4" gutterBottom sx={{color:'red'}}>
         Marvel comics
       </Typography>
       <Grid container spacing={3}>

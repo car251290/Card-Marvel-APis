@@ -1,7 +1,7 @@
 import React,{useContext} from "react";
 import CharacterCard from './CharacterCard';
 import { MarvelContext } from '../../context/CharacterProvider';
-import {Grid,Container,Card} from "@mui/material";
+import {Grid,Container,Card,Typography} from "@mui/material";
 
 const CharactersList = ({searchQuery}) => {
     const {characters,loading} = useContext(MarvelContext);
@@ -16,6 +16,9 @@ const CharactersList = ({searchQuery}) => {
   })
     return(
         <Container>
+    <Typography variant="h4" gutterBottom sx={{color:'red'}}>
+        Marvel Characters
+    </Typography>
         <Grid container spacing={3} justifyContent="center">
           {filteredCharacters.map((character) => (
             <Grid item xs={12} sm={6} md={4} lg={3} key={character.id}>

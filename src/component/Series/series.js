@@ -7,14 +7,15 @@ if(!series){
 
 return (
     <Card>
-     
         <CardContent>
             <Typography variant="h5" component="div">
                 {series.title}
             </Typography>
-                <Typography variant="body2" color="textSecondary">
+                 {series.description && (
+                    <Typography variant="body2" color="textSecondary">
                     {series.description || "No description available"}
                 </Typography>
+            )}
         </CardContent>
     </Card>
 );

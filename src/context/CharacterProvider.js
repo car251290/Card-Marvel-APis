@@ -6,7 +6,7 @@ export const MarvelContext = createContext();
 
 const CharacterProvider = ({children}) => {
     const [characters,setCharacters] = useState([]); 
-    const [comics,setComics] = useState([]);
+   // const [comics,setComics] = useState([]);
     const [stories, setStories] = useState([]);
     const [loading,setLoading] = useState(true);
     const [filteredCharacters,setFilteredCharacters] = useState([]);
@@ -44,7 +44,7 @@ const CharacterProvider = ({children}) => {
             setFilteredCharacters([]);
             setStories([]);
             setLoading(false);
-            setComics([]);
+            //setComics([]);
             setEvent([]);
             setSeries([]); // handle error by resetting series
             setSeries([]);
@@ -71,7 +71,7 @@ const CharacterProvider = ({children}) => {
         {{characters:filteredCharacters,
         loading,
         onSearch:handleSearch,
-        comics, 
+        //comics, 
         stories, 
         events,
         series // provide the series data to the context

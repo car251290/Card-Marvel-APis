@@ -61,7 +61,7 @@ export const fetchMarvelEvents = async(limit=10) => {
 };
 // Series fetctData, from the MarveL api
 export const fetchMarvelSeries = async(limit=10) => {
-    const url = `https://gateway.marvel.com:443/v1/public/series?apikey=${publicKey}&ts=${ts}&hash=${hash}`;
+    const url = `https://gateway.marvel.com:443/v1/public/series?apikey=${publicKey}&ts=${ts}&hash=${hash}&limit=${limit}`;
     try {
         const response = await fetch(url);
         if(!response.ok){
